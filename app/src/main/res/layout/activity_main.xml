@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Count"
+        android:textSize="60dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timer"
+        android:textSize="60dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:gravity="center"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewaser1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="anser1"
+        android:textColor="@android:color/black"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewanser2"
+        app:layout_constraintEnd_toStartOf="@+id/textViewanser3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewanser2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@android:color/holo_red_dark"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="anser2"
+        android:textColor="@android:color/background_dark"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewanser4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewanser3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@android:color/holo_green_dark"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="anser3"
+        android:textColor="@android:color/background_light"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewanser4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewaser1" />
+
+    <TextView
+        android:id="@+id/textViewanser4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="anser4"
+        android:textColor="@android:color/background_light"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewanser2" />
+
+    <TextView
+        android:id="@+id/textQwest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qwest"
+        android:textSize="60dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:onClick="generetQwest"
+        app:layout_constraintBottom_toTopOf="@+id/textViewaser1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTimer" />
+</androidx.constraintlayout.widget.ConstraintLayout>
